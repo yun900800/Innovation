@@ -1,0 +1,11 @@
+output:
+  ansi:
+    enabled: detect
+spring:
+  profiles:
+    active: ${profile.active}
+  application:
+    name: in-core
+server:
+  port: 6060
+
