@@ -27,7 +27,6 @@ public class RabbitMqPublisher {
                         .setContentType("application/json")
                         .build()
         );
-
         rabbitTemplate.send(exchangeName, domainEvent.eventName(), message);
     }
 
